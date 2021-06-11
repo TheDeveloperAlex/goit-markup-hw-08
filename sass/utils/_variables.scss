@@ -1,0 +1,27 @@
+/* 
+Основная политра
+Основной цвет текста-#757575 
+Цвет заголовков-#212121
+Цвет подписи-#FFFFFF
+Цвет анимации - #2196f3
+Цвет логотипа - #000000
+ - #F5F4FA
+ background: #E5E5E5;
+ border color - #eeeeee
+ */
+
+:root {
+  --main-text-color: #757575;
+  --header-color: #212121;
+  --main-header-color: #ffffff;
+  --animation-color: #2196f3;
+  --logo-color: #000000;
+  --bg-color: #f5f4fa;
+  --animation-botton-color: #188ce8;
+  --footer-bg-color: #2f303a;
+  --bg-color-portfolio: #e5e5e5;
+  --border-color: #eeeeee;
+  --indent-30px: 30px;
+  --attention-grid-item: 4;
+  --client-grid-item: 6;
+}
