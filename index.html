@@ -19,40 +19,50 @@
 <body>
     <header class="header-nav">
         <div class="main-box">
-                <div class="container header-nav__main-nav">
+            <div class="container header-nav__main-nav">
                 <!-- Логотип -->
                 <a href="./index.html" class="header-nav__logo links" lang="en"><span class="logo__beginning">Web</span>studio</a>
                 <!-- Навигация -->
-                <nav>
-                    <ul class="site-nav">
-                        <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link-active links">Студия</a></li>
-                        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link links">Портфолио</a></li>
-                        <li class="site-nav__item"><a href="" class="site-nav__link links">Контакты</a></li>
-                    </ul>
-                </nav>
-                <ul class="contacts-nav">
-                    <li class="contacts-nav__item">
-                        <a href="mailto:info@example.com" target="_blank" class="contacts-nav__link links">
-                            <svg class="contacts-nav__img-envelope">
-                                <use href="./img/sprite.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
+                <button type="button" class="mobile-menu__btn">
+                    <svg width="18" height="18">
+                        <use href="./img/sprite.svg#icon-menu"></use>
+                        <use href="./img/sprite.svg#icon-close" ></use>
+                    </svg>
+                </button>
+                    <nav>
+                        <ul class="site-nav site-nav-box">
+                            <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link-active links">Студия</a></li>
+                            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link links">Портфолио</a></li>
+                            <li class="site-nav__item"><a href="" class="site-nav__link links">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="contacts-nav contacts-nav-box">
+                        <li class="contacts-nav__item">
+                            <a href="mailto:info@example.com" target="_blank" class="contacts-nav__link  links">
+                                <svg class="contacts-nav__img-envelope">
+                                    <use href="./img/sprite.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
 
-                    <li class="contacts-nav__item">
-                        <a href="tel:+380991111111" target="_blank" class="contacts-nav__link contact-link-tel links">
-                            <svg class="contacts-nav__img-tel">
-                                <use href="./img/sprite.svg#icon-tel"></use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
+                        <li class="contacts-nav__item">
+                            <a href="tel:+380991111111" target="_blank" class="contacts-nav__link contact-link-tel links">
+                                <svg class="contacts-nav__img-tel">
+                                    <use href="./img/sprite.svg#icon-tel"></use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                
+                
             </div>
 
         </div>
-        
+        <div class="mobile-menu">
+
+        </div>
     </header>
     <main>
         <!-- Герой -->
