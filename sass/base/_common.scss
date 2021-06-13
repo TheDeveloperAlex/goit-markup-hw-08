@@ -4,6 +4,9 @@ body {
 
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 img {
@@ -27,7 +30,6 @@ div {
 p {
   margin: 0px;
 }
-
 
 h2 {
   margin: 0px;

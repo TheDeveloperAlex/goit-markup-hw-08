@@ -3,32 +3,49 @@
 }
 
 .team__header {
-  margin-bottom: 50px;
+  @media screen and (max-width: 795px) {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+  }
 
   color: var(--header-color);
 
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--indent-30px));
-  margin-top: calc(-1 * var(--indent-30px));
+  @media screen and (min-width: 1200px) {
+    margin-left: calc(-1 * var(--indent-30px));
+    margin-top: calc(-1 * var(--indent-30px));
+  }
 }
 
 .cards__item {
-  flex-basis: calc(
-    (100% - var(--indent-30px) * var(--attention-grid-item)) /
-      var(--attention-grid-item)
-  );
+  @media screen and (max-width: 795px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(
+      (100% - var(--indent-30px) * var(--attention-grid-item)) /
+        var(--attention-grid-item)
+    );
 
-  margin-top: var(--indent-30px);
-  margin-left: var(--indent-30px);
+    margin-top: var(--indent-30px);
+    margin-left: var(--indent-30px);
+  }
 
   background-color: var(--main-header-color);
 
