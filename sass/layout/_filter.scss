@@ -5,6 +5,10 @@
     flex-wrap: wrap;
     margin-bottom: 40px;
   }
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
   @media screen and (min-width: 1200px) {
     justify-content: center;
     margin-bottom: 50px;
