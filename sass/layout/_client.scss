@@ -11,7 +11,7 @@
 .client-list__item {
   color: #afb1b8;
   min-height: 92px;
-  @media screen and (max-width: 795px) {
+  @media screen and (max-width: 767px) {
     flex-basis: calc((100% - (var(--indent-30px) + 2px) * 2) / 2);
   }
   @media screen and (min-width: 1200px) {

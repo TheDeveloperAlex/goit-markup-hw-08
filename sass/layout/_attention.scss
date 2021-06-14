@@ -1,15 +1,23 @@
 .attention {
-  display: flex;
-  flex-wrap: wrap;
-  @media screen and(min-width: 1200px) {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
     margin-left: calc(-1 * var(--indent-30px));
     margin-top: calc(-1 * var(--indent-30px));
   }
 }
 
 .attention__item {
-  @media screen and(max-width: 795px) {
-    margin-bottom: 30px;
+  @media screen and(max-width: 1199px) {
+    // max-width: 354px;
+    // &:not(:nth-child(2n)) {
+    //   margin-right: 30px;
+    // }
+    // margin-bottom: 30px;
+    margin-top: var(--indent-30px);
+    margin-left: var(--indent-30px);
+    flex-basis: calc((100% - var(--indent-30px) * 2) / 2);
+    // flex-basis: calc((100% - 30px) / 2);
   }
   //     @media screen and(max-width: 795px) {
   //     flex-basis: calc(
@@ -18,7 +26,8 @@
   //     margin-top: var(--indent-30px);
   //     margin-left: calc(-1 * var(--indent-30px));
   //   }
-
+  // @media screen and(min-width: 768px) {
+  // }
   @media screen and(min-width: 1200px) {
     flex-basis: calc(
       (100% - var(--indent-30px) * var(--attention-grid-item)) /
@@ -80,7 +89,7 @@
 }
 
 .attention__header-mobile {
-  @media screen and(max-width: 795px) {
+  @media screen and(max-width: 767px) {
     text-align: center;
   }
 }
@@ -96,7 +105,7 @@
 }
 
 .attention__paragraph {
-  @media screen and(max-width: 795px) {
+  @media screen and(max-width: 767px) {
     width: 100%;
   }
 
