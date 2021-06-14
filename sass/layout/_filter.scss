@@ -1,11 +1,21 @@
 .gallery__filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+
+  @media screen and (max-width: 795px) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
+  @media screen and (max-width: 795px) {
+    margin-bottom: 15px;
+  }
 }
 
 .filter__button {

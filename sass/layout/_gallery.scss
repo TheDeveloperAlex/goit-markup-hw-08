@@ -70,7 +70,12 @@
 }
 
 .gallery__item-img-box-img {
-  max-width: 100%;
+  @media screen and (max-width: 795px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .gallery__item-box {

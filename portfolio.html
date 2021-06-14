@@ -23,18 +23,75 @@
                     <a href="./index.html" class="header-nav__logo links" lang="en"><span
                             class="logo__beginning">Web</span>studio</a>
                     <!-- Навигация -->
+                    <button type="button" class="mobile-menu__btn " aria-expanded="false" aria-controls="mobile-menu"
+                        data-menu-button>
+                        <svg width="22" height="22" aria-label="Переключатель мобильного меню">
+                            <use class="mobile-menu__btn-icon-menu" href="./img/sprite.svg#icon-menu"></use>
+                            <use class="mobile-menu__btn-icon-close" href="./img/sprite.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                    <div class="mobile-menu " id="mobile-menu" data-menu>
+                        <div class="mobile-menu__container">
+                            <ul class="mobile-menu__list">
+                                <li class="mobile-menu__list-item"><a href="./index.html"
+                                        class="mobile-menu__nav-link  links">Студия</a></li>
+                                <li class="mobile-menu__list-item "><a href="./portfolio.html"
+                                        class="mobile-menu__nav-link mobile-menu__nav-link-active links">Портфолио</a></li>
+                                <li class="mobile-menu__list-item"><a href="" class="mobile-menu__nav-link links">Контакты</a>
+                                </li>
+                            </ul>
+                            <div class="mobile-menu__contact-container">
+                                <ul class="mobile-menu__contact-list">
+        
+                                    <li class=" mobile-menu__contact-list-item-tel">
+                                        <a href="tel:+380991111111" target="_blank" class=" mobile-menu__contact-tel links">
+                                            <svg class="contacts-nav__img-tel">
+                                                <use href="./img/sprite.svg#icon-tel"></use>
+                                            </svg>
+                                            +38 096 111 11 11
+                                        </a>
+                                    </li>
+                                    <li class=" mobile-menu__contact-list-item-email">
+                                        <a href="mailto:info@example.com" target="_blank"
+                                            class="mobile-menu__contact-email  links">
+                                            <svg class="contacts-nav__img-envelope">
+                                                <use href="./img/sprite.svg#icon-envelope"></use>
+                                            </svg>
+                                            info@devstudio.com
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-menu__network-list">
+                                    <li class="mobile-menu__network-list-item"><a href=""
+                                            class="mobile-menu__network-list-link links">Instagram</a>
+                                    </li>
+                                    <li class="mobile-menu__network-list-item"><a href=""
+                                            class="mobile-menu__network-list-link links">Twitter</a>
+                                    </li>
+                                    <li class="mobile-menu__network-list-item"><a href=""
+                                            class="mobile-menu__network-list-link links">Facebook</a>
+                                    </li>
+                                    <li class="mobile-menu__network-list-item"><a href=""
+                                            class="mobile-menu__network-list-link links">LinkedIn</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                        </div>
+        
+                    </div>
                     <nav>
-                        <ul class="site-nav">
+                        <ul class="site-nav site-nav-box">
                             <li class="site-nav__item"><a href="./index.html"
-                                    class="site-nav__link  links">Студия</a></li>
-                            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link-active    links">Портфолио</a>
+                                    class="site-nav__link site-nav__link-active links">Студия</a></li>
+                            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link links">Портфолио</a>
                             </li>
                             <li class="site-nav__item"><a href="" class="site-nav__link links">Контакты</a></li>
                         </ul>
                     </nav>
-                    <ul class="contacts-nav">
+                    <ul class="contacts-nav contacts-nav-box">
                         <li class="contacts-nav__item">
-                            <a href="mailto:info@example.com" target="_blank" class="contacts-nav__link links">
+                            <a href="mailto:info@example.com" target="_blank" class="contacts-nav__link  links">
                                 <svg class="contacts-nav__img-envelope">
                                     <use href="./img/sprite.svg#icon-envelope"></use>
                                 </svg>
@@ -51,6 +108,8 @@
                             </a>
                         </li>
                     </ul>
+        
+        
                 </div>
         
             </div>
@@ -73,7 +132,21 @@
                     <ul class="gallery__list">
                         <li class="gallery__item">
                             <div class="gallery__item-img-box">
-                                <img src="./img/portfolio/img-1.jpg" alt="Технокряк" width="370" class="gallery__item-img-box-img">
+                            <picture>
+                                <source srcset="./img/photo-jpg/portfolio-works/webp/desk-tech.webp 1x , ./img/photo-jpg/portfolio-works/webp/desk-tech2x.webp 2x "
+                                    type="image/webp" media="(min-width: 1200px)" />
+                                <source srcset="./img/photo-jpg/portfolio-works/jpg/desk-tech.jpg 1x , ./img/photo-jpg/portfolio-works/desk-tech2x.jpg 2x "
+                                    type="image/jpeg" media="(min-width: 1200px)" />
+                                <source srcset="./img/photo-jpg/portfolio-works/webp/tablet-tech.webp 1x , ./img/our-team/webp/tablet-tech2x.webp 2x "
+                                    type="image/webp" media="(min-width: 768px)" />
+                                <source srcset="./img/photo-jpg/portfolio-works/jpg/tablet-tech.jpg 1x , ./img/our-team/jpg/tablet-tech2x.jpg 2x "
+                                    type="image/jpeg" media="(min-width: 768px)" />
+                                <source srcset="./img/photo-jpg/portfolio-works/webp/mobile-tech.webp 1x , ./img/our-team/webp/mobile-tech2x.webp 2x "
+                                    type="image/webp" media="(max-width: 767px)" />
+                                <source srcset="./img/photo-jpg/portfolio-works/jpg/mobile-tech.jpg 1x , ./img/our-team/jpg/mobile-tech2x.jpg 2x "
+                                    type="image/jpeg" media="(max-width: 767px)" />
+                                <img src="./img/portfolio/img-1.jpg" alt="Технокряк"  class="gallery__item-img-box-img">
+                            </picture>
                                 <p class="gallery__item-img-box-paragraph">
                                     Технокряк это современная площадка
                                     распространения коронавируса. Компании
@@ -81,6 +154,8 @@
                                     шпионажа и атак на защищённые сервера конкурентов.
                                 </p>
                             </div>
+
+
                             <div class="gallery__item-box">
                                 <h3 class="gallery__item-box-header">Технокряк</h3>
                                 <p class="gallery__item-box-paragraph">Веб-сайт</p>
@@ -88,8 +163,25 @@
                         </li>
                         <li class="gallery__item">
                             <div class="gallery__item-img-box">
-                                <img src="./img/portfolio/img-2.jpg"
+                                <picture>
+                                    <source
+                                        srcset="./img/photo-jpg/portfolio-works/webp/desk-tech.webp 1x , ./img/photo-jpg/portfolio-works/webp/desk-tech2x.webp 2x "
+                                        type="image/webp" media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./img/photo-jpg/portfolio-works/jpg/desk-tech.jpg 1x , ./img/photo-jpg/portfolio-works/desk-tech2x.jpg 2x "
+                                        type="image/jpeg" media="(min-width: 1200px)" />
+                                    <source srcset="./img/photo-jpg/portfolio-works/webp/tablet-tech.webp 1x , ./img/our-team/webp/tablet-tech2x.webp 2x "
+                                        type="image/webp" media="(min-width: 768px)" />
+                                    <source srcset="./img/photo-jpg/portfolio-works/jpg/tablet-tech.jpg 1x , ./img/our-team/jpg/tablet-tech2x.jpg 2x "
+                                        type="image/jpeg" media="(min-width: 768px)" />
+                                    <source srcset="./img/photo-jpg/portfolio-works/webp/mobile-tech.webp 1x , ./img/our-team/webp/mobile-tech2x.webp 2x "
+                                        type="image/webp" media="(max-width: 767px)" />
+                                    <source srcset="./img/photo-jpg/portfolio-works/jpg/mobile-tech.jpg 1x , ./img/our-team/jpg/mobile-tech2x.jpg 2x "
+                                        type="image/jpeg" media="(max-width: 767px)" />
+                                    <img src="./img/portfolio/img-2.jpg"
                                     alt="Постер New Orlean vs Golden Star" width="370" class="gallery__item-img-box-img">
+                                </picture>
+                                
                                 <p class="gallery__item-img-box-paragraph">
                                     Технокряк это современная площадка
                                     распространения коронавируса. Компании
@@ -293,6 +385,7 @@
                 </div>
             </div>
         </footer>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 
 </html>
