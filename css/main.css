@@ -760,7 +760,7 @@ text-align: center; */
   padding-left: 24px;
   padding-bottom: 48px;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
