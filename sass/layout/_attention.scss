@@ -1,4 +1,15 @@
+.attention__section {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+}
+
 .attention {
+  @media screen and(max-width: 1199px) {
+    margin-left: calc(-1 * var(--indent-30px));
+    margin-top: calc(-1 * var(--indent-30px));
+  }
+
   @media screen and(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;

@@ -11,7 +11,7 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     flex-basis: calc((100% - var(--indent-30px) * 2) / 2);
     margin-top: var(--indent-30px);
     margin-left: var(--indent-30px);
@@ -21,7 +21,9 @@
     margin-top: var(--indent-30px);
     margin-left: var(--indent-30px);
   }
-
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -95,6 +97,7 @@
 
 .gallery__item-box {
   padding: 20px 24px;
+
   //   max-width: 370px;
 }
 
