@@ -1419,6 +1419,12 @@ text-align: center; */
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-box__item {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-box__item {
     margin-right: 70px;
@@ -1451,7 +1457,7 @@ text-align: center; */
 
 @media screen and (max-width: 767px) {
   .footer__networks-box-paragraph {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     text-align: center;
   }
 }
